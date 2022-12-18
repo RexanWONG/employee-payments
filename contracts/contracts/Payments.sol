@@ -29,14 +29,14 @@ contract Payments {
     /// @param firstName The first name of the employee
     /// @param lastName The last name of the employee
     /// @param salary The salary of the employee
-    /// @param role The role of the employee
+    /// @param role The role of the employee 
     function addEmployee(
         address payable walletAddress, 
         string memory firstName, 
         string memory lastName, 
         uint256 salary, 
         string memory role
-    ) public {
+    ) public onlyOwner {
         employees.push(Employee(walletAddress, firstName, lastName, salary, role));
     } 
 
@@ -44,8 +44,8 @@ contract Payments {
     function checkBalance() public view returns(uint256) {
         return address(this).balance;
     } 
-    
-    function deposit(address walletAddress) payable public {  
+
+    function deposit(address walletAddress) payable public onlyOwner {  
         addToEmployeeBalance(walletAddress); 
     } 
 
@@ -60,6 +60,11 @@ contract Payments {
                 emit LogEmployeeSalaryReceived(walletAddress, msg.value, checkBalance());
             }
         }
+    }
+
+    modifier onlyOwner {
+        require(msg.sender == owner, "Only the owner can call this function.");
+        _;
     }
 }    
     
