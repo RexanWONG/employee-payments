@@ -17,3 +17,5 @@ Add, view, and deposit funds to employees in a certain company.
 
 
 <img width="1430" alt="Screenshot 2022-12-18 at 5 43 32 PM" src="https://user-images.githubusercontent.com/96183717/208291477-5551d194-4ae2-4500-89b3-3bb98e20def3.png">
+<img width="1440" alt="Screenshot 2022-12-18 at 6 01 34 PM" src="https://user-images.githubusercontent.com/96183717/208292134-879a2eb6-bb11-41ae-9f66-689d1246438b.png">
+<img width="1426" alt="Screenshot 2022-12-18 at 6 01 58 PM" src="https://user-images.githubusercontent.com/96183717/208292146-c3c6f21e-c564-4abc-b926-af8028def16d.png">
