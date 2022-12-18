@@ -1,0 +1,17 @@
+.app{
+  display: flex;
+  overflow: hidden;
+}
+
+.navbar{
+  flex: 0.2;
+}
+
+.main{
+  flex: 0.8;
+  width: 100%;
+}
+
+.routes{
+  padding: 20px;
+}
