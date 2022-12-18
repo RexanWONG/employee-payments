@@ -10,7 +10,7 @@ Add, view, and deposit funds to employees in a certain company.
 2. In contracts/hardhat.config.js, change the <code>URL</code> and <code>PRIVATE_KEY</code> to your own api key and private key respectively.
 3. Deploy the contract - <code>npx hardhat run scripts/deploy.js --network goerli</code>
 4. In <code>client/src/utils/payments.json</code>, change my ABI to your own contract ABI.  You can find your own contract ABI inside <code>contracts/contracts/Payments.json</code>.
-5. Inside all of the files in the components folder except for <code>index.js</code> and <code>Footer.jsx</code>, change my contract address of <code>Payments.sol to your's</code>.
+5. Inside all of the files in the components folder except for <code>index.js</code> and <code>Footer.jsx</code>, change my contract address of <code>Payments.sol</code> to the contract address of your deployed contract.
 6. Start tinkering
 
 
